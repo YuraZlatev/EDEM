@@ -1,6 +1,7 @@
 #include "pch.h"
 #include <cstring>
 #include <fstream>
+#include <amp.h>
 #include "sha256.h"
 
 const unsigned int SHA256::sha256_k[64] = //UL = uint32

@@ -4,6 +4,7 @@
 
 Block::Block()
 {
+	
 }
 
 Block::Block(string prev_hash, string nameOfBlock, string description, string data)
@@ -20,6 +21,16 @@ Block::Block(string prev_hash, string nameOfBlock, string description, string da
 	this->hash = sha256(str);
 }
 
+Block::Block(string blockName, string hash, string description, string createTime, string prev_hash, string transaction_hash, string data)
+{
+	this->blockName = blockName;
+	this->hash = hash;
+	this->description = description;
+	this->createTime = createTime;
+	this->previous_hash = prev_hash;
+	this->transaction_hash = transaction_hash;
+	this->data = data;
+}
 
 //-------------GET---------------------
 
@@ -60,6 +71,22 @@ string Block::GetHash()
 void Block::SetBlockInformation(string newDescription)
 {
 	this->description = newDescription;
+}
+
+
+void Block::WriteBlock()
+{
+	ofstream os = ofstream(this->blockName + ".edem");
+
+	os << this->blockName << endl;
+	os << this->hash << endl;
+	os << this->description << endl;
+	os << this->createTime << endl;
+	os << this->previous_hash << endl;
+	os << this->transaction_hash << endl;
+	os << this->data << endl;
+
+	os.close();
 }
 
 

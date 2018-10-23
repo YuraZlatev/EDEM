@@ -1,7 +1,9 @@
 #include "pch.h"
 #include "Place.h"
 
-Place::Place(string country = "", string region = "", string locality = "", string area = "", string street = "", string home = "", string apartment = "", string housing = "")
+Place::Place() {}
+
+Place::Place(string country, string region, string locality, string area, string street, string home, string apartment, string housing)
 {
 	this->country = country;
 	this->region = region;

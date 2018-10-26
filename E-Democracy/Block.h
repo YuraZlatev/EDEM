@@ -16,43 +16,36 @@ using namespace std;
 class Block
 {
 private: 
-	/* имя блока */
 	string blockName;
-
 	string hash;
-
-	/* информация о блоке */
 	string description;
-	/* время создания блока */
 	string createTime;
-
 	string previous_hash;
 	string transaction_hash;
-
-	/* информация */
 	string data;
-
-	//----Method's--------------------
-	string CreateTime();
 
 public:
 	Block();
-	Block(string prev_hash, string nameOfBlock, string description, string data);
-
+	Block(string arr[]);
+	Block(string blockName, string description, string prev_hash, string data);
+	Block(string blockName, string hash, string description, string createTime, string prev_hash, string transaction_hash, string data);
+	~Block();
 
 	string GetBlockName();
-	string GetDescription();
-	string GetPreviousHash();
 	string GetHash();
+	string GetDescription();
 	string GetCreateTime();
+	string GetPreviousHash();
+	string GetTransactionHash();
+	string GetData();
+	string GetBlock();
+	string GetBlockWithoutHash();
 
-	void WriteBlock();
-
-	Block(string blockName, string hash, string description, string createTime, string prev_hash, string transaction_hash, string data);
+	void WriteBlock(string path);
+	void ReadBlock(string path, string name, Block *&temp);
+	void ShowBlock();
 
 	void SetBlockInformation(string newDescription);
 
-	~Block();
+	static string getTime();
 };
-
-	static void ReadBlock(string path, Block *&temp);

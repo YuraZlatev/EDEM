@@ -5,27 +5,30 @@
 #include <list>;
 #include <functional>;
 #include <algorithm>;
+
 #include "Block.h";
 
 using namespace std;
 
-
-
 class BlockChain_Democracy
 {
 private:
-	/* кол-во блоков */
+	string nameOfBlockChain;
+	string path;
+
 	unsigned long long count_blocks;
-	/* текущий hash последнего блока */
-	string prev_hash;
 
 	Block curBlock;
+	string prev_hash;
 
 public:
-	BlockChain_Democracy();
+	BlockChain_Democracy(string nameOfBlockChain,string path);
+	~BlockChain_Democracy();
+
+	string GetPath();
+	Block GetBlock(unsigned long long number);
 
 	void CreateBlock(string description, string data);
-
-
-	~BlockChain_Democracy();
+	void ShowBlock(unsigned long long number);
+	void VerifyBlock(unsigned long long number);
 };

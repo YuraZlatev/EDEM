@@ -1,11 +1,12 @@
 #include "pch.h"
 #include "Marriage.h"
 
-Marriage::Marriage()
-{
+Marriage::Marriage() {
 	isMarried = false;
 	idSpouse = 0;
 }
+
+Marriage::~Marriage() {}
 
 bool Marriage::GetIsMarried() {
 	return this->isMarried;
@@ -21,8 +22,4 @@ void Marriage::SetIsMarried(bool isMarried) {
 
 void Marriage::SetIdSpouse(unsigned long long idSpouse) {
 	this->idSpouse = idSpouse;
-}
-
-Marriage::~Marriage()
-{
 }

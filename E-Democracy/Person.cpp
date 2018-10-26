@@ -1,12 +1,15 @@
 #include "pch.h"
 #include "Person.h"
+#include "Block.h"
 
 unsigned long long Person::countOfIdPerson = 0;
 
-Person::Person(bool sex, time_t birthday, string surname, string name, string middleName, Place placeOfBirth, unsigned long long idMother, unsigned long long idFather)
+Person::Person(bool sex, string birthday, string surname, string name, string middleName, Place placeOfBirth, unsigned long long idMother, unsigned long long idFather)
 {
 	this->idPerson = ++countOfIdPerson;
-	this->isAlive = true;
+	//delete
+	this->isAlive = true; 
+	//create
 	this->sex = sex;
 	this->birthday = birthday;
 	this->surname = surname;
@@ -15,7 +18,7 @@ Person::Person(bool sex, time_t birthday, string surname, string name, string mi
 	this->placeOfBirth = placeOfBirth;
 	this->idMother = idMother;
 	this->idFather = idFather;
-
+	//update
 	this->citizenship = false;
 	this->marriage = Marriage();
 	this->placeOfLive = Place();
@@ -84,6 +87,24 @@ bool Person::ResetPlaceOfLive() {
 	return true;
 }
 
+string Person::PersonToString() {
+	return  to_string(this->idPerson) + " " + 
+		to_string(this->sex) + " " + 
+		this->birthday + " " + 
+		this->placeOfBirth.PlaceToString()+ " " + 
+		to_string(this->idMother) + " " + 
+		to_string(this->idFather) + " " + 
+		to_string(this->isAlive) + " " + 
+		this->surname + " " + 
+		this->name + " " + 
+		this->middleName + " " + 
+		to_string(this->citizenship) + " " + 
+		to_string(this->marriage.GetIdSpouse()) + " " + 
+		this->placeOfLive.PlaceToString() + " " + 
+		to_string(identityCode);
+}
+
 Person::~Person()
 {
+
 }

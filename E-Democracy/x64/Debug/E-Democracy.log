@@ -1,14 +1,19 @@
 ﻿  E-Democracy.cpp
-e:\startup\edem\e-democracy\block.h(2): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
-e:\startup\edem\e-democracy\block.h(3): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
-e:\startup\edem\e-democracy\block.h(4): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
-e:\startup\edem\e-democracy\block.h(5): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
-e:\startup\edem\e-democracy\block.h(6): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
-e:\startup\edem\e-democracy\block.h(7): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
-e:\startup\edem\e-democracy\blockchain_democracy.h(3): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
-e:\startup\edem\e-democracy\blockchain_democracy.h(4): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
-e:\startup\edem\e-democracy\blockchain_democracy.h(5): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
-e:\startup\edem\e-democracy\blockchain_democracy.h(6): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
-e:\startup\edem\e-democracy\blockchain_democracy.h(7): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
-e:\startup\edem\e-democracy\blockchain_democracy.h(8): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
-  E-Democracy.vcxproj -> E:\StartUp\Edem\x64\Debug\E-Democracy.exe
+c:\users\edem\source\repos\yurazlatev\edem\e-democracy\block.h(2): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+c:\users\edem\source\repos\yurazlatev\edem\e-democracy\block.h(3): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+c:\users\edem\source\repos\yurazlatev\edem\e-democracy\block.h(4): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+c:\users\edem\source\repos\yurazlatev\edem\e-democracy\block.h(5): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+c:\users\edem\source\repos\yurazlatev\edem\e-democracy\block.h(6): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+c:\users\edem\source\repos\yurazlatev\edem\e-democracy\block.h(7): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+c:\users\edem\source\repos\yurazlatev\edem\e-democracy\blockchain_democracy.h(3): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+c:\users\edem\source\repos\yurazlatev\edem\e-democracy\blockchain_democracy.h(4): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+c:\users\edem\source\repos\yurazlatev\edem\e-democracy\blockchain_democracy.h(5): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+c:\users\edem\source\repos\yurazlatev\edem\e-democracy\blockchain_democracy.h(6): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+c:\users\edem\source\repos\yurazlatev\edem\e-democracy\blockchain_democracy.h(7): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+c:\users\edem\source\repos\yurazlatev\edem\e-democracy\blockchain_democracy.h(9): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+c:\users\edem\source\repos\yurazlatev\edem\e-democracy\person.h(2): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+c:\users\edem\source\repos\yurazlatev\edem\e-democracy\person.h(3): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+c:\users\edem\source\repos\yurazlatev\edem\e-democracy\person.h(4): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+c:\users\edem\source\repos\yurazlatev\edem\e-democracy\person.h(5): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+c:\users\edem\source\repos\yurazlatev\edem\e-democracy\place.h(2): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  E-Democracy.vcxproj -> C:\Users\Edem\Source\Repos\YuraZlatev\EDEM\x64\Debug\E-Democracy.exe
